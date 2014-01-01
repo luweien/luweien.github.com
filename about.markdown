@@ -3,9 +3,9 @@ title: about
 layout: page
 ---
 
-ÕâÀïÊÇ Bruce µÄ¸öÈË²©¿Í£¬´´½¨ÓÚ 2013 Äê12ÔÂ¡£<br /><br />»¶Ó­¹ÛÉÍ¡¢½¨Òé¡¢ÅÄ×©¡­¡­
+è¿™é‡Œæ˜¯ Bruce çš„ä¸ªäººåšå®¢ï¼Œåˆ›å»ºäº 2013 å¹´12æœˆã€‚<br /><br />æ¬¢è¿è§‚èµã€å»ºè®®ã€æ‹ç –â€¦â€¦
 
 QQ:474949929
 
-[![ĞÂÀËÎ¢²©](http://service.t.sina.com.cn/widget/qmd/1379187692/936f3b91/1.png)](http://weibo.com/u/{{ site.weibo }})
+[![æ–°æµªå¾®åš](http://service.t.sina.com.cn/widget/qmd/1379187692/936f3b91/1.png)](http://weibo.com/u/{{ site.weibo }})
 
