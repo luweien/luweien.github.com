@@ -31,13 +31,15 @@
             {% endfor %}
           </nav>
         </header>
+        
         <div id="content">
         {{ content }}
         </div>
+        
         <footer>
           <div>
             {% assign first_post = site.posts | last %}
-            &copy; {{ first_post.date | date: "%Y" }} ~ {{ site.time | date: "%Y" }} {{ site.author }} | powered by jekyll | themed by <a href="http://lhzhang.com" title="sext vi">sext vi</a> | fork <a href="https://github.com/waynezhang/blog" title="fork me">me</a>
+            &copy; {{ first_post.date | date: "%Y" }} ~ {{ site.time | date: "%Y" }} {{ site.author }} | powered by jekyll | Plase Use IE9.0+ or Chorm
           </div>
         </footer>
       </div> <!-- main -->
