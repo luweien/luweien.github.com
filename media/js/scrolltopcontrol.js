@@ -44,7 +44,6 @@ var scrolltotop={
 		}
 	},init:function(){
 		jQuery(document).ready(function($){
-			debugger;
 			var mainobj=scrolltotop;
 			var iebrws=document.all;
 			mainobj.cssfixedsupport=!iebrws||iebrws&&document.compatMode=="CSS1Compat"&&window.XMLHttpRequest;
