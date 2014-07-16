@@ -1,30 +1,11 @@
+auto: true
+
 markdown: rdiscount
 pygments: true
-permalink: /:year/:month/:day/:title.html
-name: "Bruce's Space"
-markdown: rdiscount
+paginate: 8
+permalink: /:title
 
-author: "luweien"
-atom-baseurl: "http://luweien.github.com"
-disqus: "luweien"
-
-navigations:
-  - title: Archive
-    class: fa fa-list-ul
-    href: /archive.html
-  - title: Tags
-    class: fa fa-tags
-    href: /tags.html
-  - title: About
-    class: fa fa-user
-    href: /about.html
-  - title: Gallery
-    class: fa fa-film
-    href: 
-  - title: Blogroll
-    class: fa fa-link
-    href: /links.html
-  - title: Subscribe
-    class: fa fa-rss
-    href: /atom.xml
-
+title: Bruce.com
+url: http://luweien.github.io/
+feed: /atom.xml
+author_info: <a href="http://luweien.github.io/">Bruce</a>
