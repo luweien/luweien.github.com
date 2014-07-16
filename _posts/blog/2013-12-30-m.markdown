@@ -1,8 +1,8 @@
 ---
-title: 人生路
-layout: post
-guid: urn:uuid:8a9f4073-d0cc-41f2-b3ba-db1d2332f837
-tags: life
+layout:     post
+title:      人生路
+category: blog
+description: 人生路
 ---
 
 ![cat](/media/files/2013/favorite.jpg)
