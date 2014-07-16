@@ -1,4 +1,4 @@
-$(document).ready(function(){
+﻿$(document).ready(function(){
 
     var isMobile = {
         Android: function() {
@@ -25,7 +25,7 @@ $(document).ready(function(){
 
     //***********************
     //**评论的代码也删掉哦***
-   // window.disqus_shortname = 'beiyuu'; // required: replace example with your forum shortname
+   // window.disqus_shortname = 'wayne-lu'; // required: replace example with your forum shortname
    // $('#disqus_container .comment').on('click',function(){
       //  $(this).html('加载中...');
      //   var that = this;
