@@ -25,6 +25,7 @@
 
     //***********************
     //**评论的代码也删掉哦***
+    alert(1)
    window.disqus_shortname = 'wayne-lu'; // required: replace example with your forum shortname
     $('#disqus_container .comment').on('click',function(){
         $(this).html('加载中...');
