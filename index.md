@@ -55,8 +55,6 @@ layout: home
 		     <br/> <br/>
 		</div>
 
-  </div>
-
 
     </div>
     <div class="aside">
