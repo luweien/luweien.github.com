@@ -13,8 +13,7 @@ layout: home
 
         <div class="cate-bar"><span id="cateBar"></span></div>
 
-          <div>
-   
+        <div>
 		 {% for post in paginator.blog %}
             <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
             <p>
@@ -37,7 +36,7 @@ layout: home
         {% endfor %}
     </div>
  <!-- ��ҳ��: Pagination links -->
-		<div id="post-pagination" class="pagination">
+<div id="post-pagination" class="pagination">
   {% if paginator.previous_page %}
     <p class="previous">
       {% if paginator.previous_page == 1 %}
