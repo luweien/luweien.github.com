@@ -17,7 +17,6 @@ description: Bruce
                     {{ post.date | date: "%B %e, %Y" }}
                 </strong>
                 | {{ post.category }}
-                | <a href="http://lingjun.github.com{{ post.url }}/#disqus_thread" data-disqus-identifier="{{ post.url }}">comments</a>
             </p>
             {% if forloop.last %}
             {% else %}
