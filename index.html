@@ -13,14 +13,28 @@ layout: home
 
         <div class="cate-bar"><span id="cateBar"></span></div>
 
-        <ul class="artical-list">
-        {% for post in site.categories.blog %}
-            <li>
-                <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-                <div class="title-desc">{{ post.description }}</div>
-            </li>
+          <div>
+        {% for post in paginator.posts %}
+            <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+            <p>
+                <!-- post.content | strip_html | truncatewords:75}}  -->
+                {{ post.content  | | split:'<!--break-->' | first}}
+                <a href="{{ post.url }}"><strong>阅读全文/Read more.</strong></a><br/>
+            </p>
+            <p>
+                <strong>
+                    {{ post.date | date: "%B %e, %Y" }}
+                </strong>
+                | {{ post.category }}
+                
+            </p>
+            {% if forloop.last %}
+            {% else %}
+                <hr>
+            {% endif %}
+
         {% endfor %}
-        </ul>
+    </div>
  <!-- ��ҳ��: Pagination links -->
 		<div id="post-pagination" class="pagination">
 		   <hr>
