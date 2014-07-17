@@ -15,6 +15,7 @@
     <link href="{{ ASSET_PATH }}/stylesheets/foundation.min.css" rel="stylesheet">
     <link href="{{ ASSET_PATH }}/stylesheets/app.css" rel="stylesheet" type="text/css" media="all">
     <link rel="stylesheet" href="{{ ASSET_PATH }}/stylesheets/social_foundicons.css">
+	 <link rel="shortcut icon" href="/favicon.ico">
     <!-- Le fav and touch icons -->
   <!-- Update these with your own images
     <link rel="shortcut icon" href="images/favicon.ico">
@@ -29,7 +30,7 @@
   <div class="row contain-to-grid">
       <nav class="top-bar">
           <ul class="left">
-              <li><a title="Home" href="http://lingjun.github.com">{{ site.title }}</a></li>
+              <li><a title="Home" href="http://luweien.github.com">{{ site.title }}</a></li>
               <li class="divider"></li>
               <li><a title="Archive" href="{{ BASE_PATH }}/archive.html">Archive</a></li>
               <li class="divider"></li>
@@ -42,18 +43,21 @@
 
               <li class="has-dropdown">
                           <a href="#">Social</a>
-                          <ul class="dropdown"><li class="title back js-generated"><h5><a href="#">Social</a></h5></li>
-                            <li><a target="_blank" title="Go to github.com/lingjun"  href="https://github.com/lingjun">Github</a></li>
+                          <ul class="dropdown"><li class="title back js-generated"><h5><a href="#">Weibo</a></h5></li>
+                            <li><a target="_blank" title="Go to Weibo.com/"  href="http://weibo.com/hcylove">hcylove</a></li>
+
                               <!--
                             <li><a target="_blank" title="Go to twitter.com/ThibaultLaurens" href="https://twitter.com/ThibaultLaurens">Twitter</a></li>
                             <li><a target="_blank" title="Go to linkedin.com/thibault-laurens" href="http://www.linkedin.com/pub/thibault-laurens/13/b58/40b">LinkedIn</a></li>
                           -->
                           </ul>
                         </li>
+<!--
               <li class="divider"></li>
               <li><a title="Go to github.com/lingjun" href="https://github.com/lingjun?tab=repositories" target="_blank">Projects</a></li>
               <li class="divider"></li>
               <li><a title="Go to flickr.com/photos/lingjun" href="http://www.flickr.com/photos/lingjun/" target="_blank">Photo</a></li>
+ -->
               <li class="divider"></li>
               <li><a title="More info about me" href="{{ BASE_PATH }}/about.html">About</a></li>
  <!--
@@ -77,7 +81,7 @@
         {{ content }}
       </section>
 
-      <footer class="row">
+		      <footer class="row">
           <hr>
         <div class="eight columns">
             <p style="padding-top: 0px">
@@ -96,7 +100,6 @@
         <img alt="technut" src="{{ ASSET_PATH }}/images/technut.png"/>
         </div>
       </footer>
-
  <!-- /container -->
 
     {% include JB/analytics %}
