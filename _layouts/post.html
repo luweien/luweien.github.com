@@ -67,21 +67,21 @@ layout: default
     </div>
 
     <div class="sidenav">
-        <h2>²©¿Í</h2>
+        <h2>Blog</h2>
         <ul class="artical-list">
         {% for post in site.categories.blog%}
             <li><a href="{{ post.url }}">{{ post.title }}</a></li>
         {% endfor %}
         </ul>
 
-        <h2>ÔÓ</h2>
+        <h2>Luan</h2>
         <ul class="artical-list">
         {% for post in site.categories.opinion%}
             <li><a href="{{ post.url }}">{{ post.title }}</a></li>
         {% endfor %}
         </ul>
 
-        <h2>Éú»î</h2>
+        <h2>Life</h2>
         <ul class="artical-list">
         {% for post in site.categories.project%}
             <li><a href="{{ post.url }}">{{ post.title }}</a></li>
