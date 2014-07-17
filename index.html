@@ -11,17 +11,12 @@ layout: home
             <li style="text-align:right"><a href="/project"><span>Life</span></a></li>
         </ul>
 
-        <div class="cate-bar"><span id="cateBar"></span></div>
+        <div class="cate-bar"><span id="cateBar">22</span></div>
 
         <div>
 		 {% for post in paginator.blog %}
             <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-            <p>
-                <!-- post.content | strip_html | truncatewords:75}}  -->
-                {{ post.content  | | split:'<!--break-->' | first}}
-               
-            </p>
-            <p>
+             <p>
                 <strong>
                     {{ post.date | date: "%B %e, %Y" }}
                 </strong>
