@@ -80,23 +80,44 @@
       <section>
         {{ content }}
       </section>
-		<footer class="row">
+
+		      <footer class="row">
           <hr>
         <div class="eight columns">
-         <p>
-              &copy; {{ site.author.name }} 2013 with help from Jekyll Bootstrap</a> and Github
-          </p>
+            <p style="padding-top: 0px">
+                <a title="Go to github.com/lingjun" target="_blank" href="https://github.com/lingjun"><i class="foundicon-github"></i></a>
+               <!-- <a title="Go to facebook.com/thibault.laurens" target="_blank" href="https://www.facebook.com/thibault.laurens"><i class="social foundicon-facebook"></i></a>
+                <a title="Go to linkedin.com/thibault-laurens" target="_blank" href="http://www.linkedin.com/pub/thibault-laurens/13/b58/40b"><i class="social foundicon-linkedin"></i></a>
+                <a title="Go to twitter.com/ThibaultLaurens" target="_blank" href="https://twitter.com/ThibaultLaurens"><i class="social foundicon-twitter"></i></a>
+                <a title="Go to flickr.com/photos/thibaultlaurens" target="_blank" href="http://www.flickr.com/photos/thibaultlaurens/"><i class="social foundicon-flickr"></i></a>
+           --> </p>
+                <p>
+                    &copy; {{ site.author.name }} 2013 with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+                  and <a href="http://foundation.zurb.com" target="_blank" title="The most advanced responsive front-end framework in the world.">Zurb's Foundation 3</a>
+                </p>
         </div>
         <div class="four columns right">
-         <script type="text/javascript">
-                var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-                document.write(unescape("%3Cspan id='cnzz_stat_icon_1000265309'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s22.cnzz.com/z_stat.php%3Fid%3D1000265309%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));
-            </script>
+        <img alt="technut" src="{{ ASSET_PATH }}/images/technut.png"/>
         </div>
       </footer>
  <!-- /container -->
 
-   
+    {% include JB/analytics %}
+
+      <script type="text/javascript">
+		var disqus_shortname = 'thibaultlaurens';
+		var disqus_identifier = '{{ page.url }}';
+		var disqus_url = 'http://thibaultlaurens.github.com{{ page.url }}';
+ 
+		/* * * DON'T EDIT BELOW THIS LINE * * */
+		(function () {
+			var s = document.createElement('script'); s.async = true;
+			s.type = 'text/javascript';
+			s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+			(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+		}());
+	</script>
+
   </body>
 
 </html>
