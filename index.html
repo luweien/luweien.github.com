@@ -20,13 +20,15 @@ layout: home
             <p>
                 <!-- post.content | strip_html | truncatewords:75}}  -->
                 {{ post.content  | | split:'<!--break-->' | first}}
-				<strong>
+               
+            </p>
+            <p>
+                <strong>
                     {{ post.date | date: "%B %e, %Y" }}
                 </strong>
                 | {{ post.category }}
-               
+                
             </p>
-           
             {% if forloop.last %}
             {% else %}
                 <hr>
