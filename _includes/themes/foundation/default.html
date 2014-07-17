@@ -80,33 +80,23 @@
       <section>
         {{ content }}
       </section>
-       <footer >
-          <div>
-            &copy; {{ site.author }} | powered by jekyll
-            <script type="text/javascript">
+		<footer class="row">
+          <hr>
+        <div class="eight columns">
+         <p>
+              &copy; {{ site.author.name }} 2013 with help from Jekyll Bootstrap</a> and Github
+          </p>
+        </div>
+        <div class="four columns right">
+         <script type="text/javascript">
                 var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
                 document.write(unescape("%3Cspan id='cnzz_stat_icon_1000265309'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s22.cnzz.com/z_stat.php%3Fid%3D1000265309%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));
             </script>
-          </div>
-        </footer>
+        </div>
+      </footer>
  <!-- /container -->
 
-    {% include JB/analytics %}
-
-      <script type="text/javascript">
-		var disqus_shortname = 'thibaultlaurens';
-		var disqus_identifier = '{{ page.url }}';
-		var disqus_url = 'http://thibaultlaurens.github.com{{ page.url }}';
- 
-		/* * * DON'T EDIT BELOW THIS LINE * * */
-		(function () {
-			var s = document.createElement('script'); s.async = true;
-			s.type = 'text/javascript';
-			s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-			(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-		}());
-	</script>
-
+   
   </body>
 
 </html>
