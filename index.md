@@ -21,52 +21,43 @@ layout: home
             </li>
         {% endfor %}
         </ul>
-	<div id="post-pagination" class="pagination">
-  {% if paginator.previous_page %}
-    <p class="previous">
-      {% if paginator.previous_page == 1 %}
-        <a href="/">Previous</a>
-      {% else %}
-        <a href="{{ paginator.previous_page_path }}">Previous</a>
-      {% endif %}
-    </p>
-  {% else %}
-    <p class="previous disabled">
-      <span>Previous</span>
-    </p>
-  {% endif %}
+ <!-- 分页器: Pagination links -->
+		<div id="post-pagination" class="pagination">
+		   <hr>
+		     <br/>
+		  {% if paginator.previous_page %}
+		  <div class="four columns">
+		    {% if paginator.previous_page == 1 %}
+		    <a href="/">&larr; Previous</a>
+		    {% else %}
+		    <a href="/page{{paginator.previous_page}}">&larr; 上一页/Previous</a>
+		    {% endif %}
+		  </div>
+		  {% else %}
+		  <div class="four columns previous disabled">
+		    <span>&larr; Previous</span>
+		  </div>
+		  {% endif %}
 
-  <ul class="pages">
-    <li class="page">
-      {% if paginator.page == 1 %}
-        <span class="current-page">1</span>
-      {% else %}
-        <a href="/">1</a>
-      {% endif %}
-    </li>
+		<div class="four columns">
+		<span class="page_number ">Page: {{paginator.page}} of {{paginator.total_pages}}</span>
+		</div>
 
-    {% for count in (2..paginator.total_pages) %}
-      <li class="page">
-        {% if count == paginator.page %}
-          <span class="current-page">{{ count }}</span>
-        {% else %}
-          <a href="/page{{ count }}">{{ count }}</a>
-        {% endif %}
-      </li>
-    {% endfor %}
-  </ul>
+		  {% if paginator.next_page %}
+		  <div class="four columns next">
+		    <a href="/page{{paginator.next_page}}">Next &rarr;</a>
+		  </div>
+		  {% else %}
+		  <div class="four columns next disabled">
+		    <span>下一页/Next &rarr;</span>
+		  </div>
+		  {% endif %}
+		     <br/> <br/>
+		</div>
 
-  {% if paginator.next_page %}
-    <p class="next">
-      <a href="{{ paginator.next_page_path }}">Next</a>
-    </p>
-  {% else %}
-    <p class="next disabled">
-      <span>Next</span>
-    </p>
-  {% endif %}
+  </div>
 
-</div>
+
     </div>
     <div class="aside">
     </div>
