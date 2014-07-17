@@ -21,7 +21,7 @@ layout: home
             </li>
         {% endfor %}
         </ul>
- <!-- ∑÷“≥∆˜: Pagination links -->
+ <!-- ÔøΩÔøΩ“≥ÔøΩÔøΩ: Pagination links -->
 		<div id="post-pagination" class="pagination">
 		   <hr>
 		     <br/>
@@ -30,7 +30,7 @@ layout: home
 		    {% if paginator.previous_page == 1 %}
 		    <a href="/">&larr; Previous</a>
 		    {% else %}
-		    <a href="/page{{paginator.previous_page}}">&larr; …œ“ª“≥/Previous</a>
+		    <a href="/page{{paginator.previous_page}}">&larr; Previous</a>
 		    {% endif %}
 		  </div>
 		  {% else %}
@@ -49,7 +49,7 @@ layout: home
 		  </div>
 		  {% else %}
 		  <div class="four columns next disabled">
-		    <span>œ¬“ª“≥/Next &rarr;</span>
+		    <span>Next &rarr;</span>
 		  </div>
 		  {% endif %}
 		     <br/> <br/>
