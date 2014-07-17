@@ -1,8 +1,8 @@
-﻿---
+---
 layout: page
-title: 一生毁了 !
+title: 谋食谋道 !
 tagline: 读书 行路 生活 技术
-description: Bruce
+description: reads thoughts life technology
 ---
 {% include JB/setup %}
 
@@ -11,12 +11,17 @@ description: Bruce
     <div>
         {% for post in paginator.posts %}
             <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-           
+            <p>
+                <!-- post.content | strip_html | truncatewords:75}}  -->
+                {{ post.content  | | split:'<!--break-->' | first}}
+                <a href="{{ post.url }}"><strong>阅读全文/Read more.</strong></a><br/>
+            </p>
             <p>
                 <strong>
                     {{ post.date | date: "%B %e, %Y" }}
                 </strong>
                 | {{ post.category }}
+                | <a href="http://lingjun.github.com{{ post.url }}/#disqus_thread" data-disqus-identifier="{{ post.url }}">comments</a>
             </p>
             {% if forloop.last %}
             {% else %}
@@ -73,10 +78,34 @@ description: Bruce
   <div class="two columns offset-by-one">
               <h4>友情链接</h4>
               <ul>
+                  <li><a target="_blank" title="Los Techies" href="http://lostechies.com/"><strong>Los Techies</strong></a></li>
+                  <li><a target="_blank" title="Scott Hanselman" href="http://www.hanselman.com/blog/"><strong>Scott Hanselman</strong></a></li>
+                  <li><a target="_blank" title="Haacked" href="http://haacked.com/"><strong>Phil Haack</strong></a></li>
+                  <li><a target="_blank" title="Martin Fowler" href="http://martinfowler.com"><strong>Martin Fowler</strong></a></li>
+                  <li><a target="_blank" title="Ian Robinson" href="http://iansrobinson.com"><strong>Ian Robinson</strong></a></li>
+                  <li><a target="_blank" title="High Scalability" href="http://highscalability.com/"><strong>High Scalability</strong></a></li>
+                  <li><a target="_blank" title="Coding Horror" href="http://www.codinghorror.com/blog/"><strong>Coding Horror</strong></a></li>
+                  <li><a target="_blank" title="Dr Dobbs" href="http://www.drdobbs.com/"><strong>Dr Dobbs</strong></a></li>
+                  <li><a target="_blank" title="Udi Dahan" href="http://www.udidahan.com/?blog=true"><strong>Udi Dahan</strong></a></li>
+                  <li><a target="_blank" title="Geek Monkey" href="http://geekmonkey.org/"><strong>Geek Monkey</strong></a></li>
+                  <li><a target="_blank" title="Alex Maccaw" href="http://blog.alexmaccaw.com/"><strong>Alex Maccaw</strong></a></li>
+                  <li><a target="_blank" title="Pat Shaughnessy" href="http://patshaughnessy.net/"><strong>Pat Shaughnessy</strong></a></li>
+                  <li><a target="_blank" title="How To Node" href="http://howtonode.org/"><strong>How To Node</strong></a></li>
+                  <li><a target="_blank" title="Troy Hunt" href="http://www.troyhunt.com/"><strong>Troy Hunt</strong></a></li>
                   <!--<strong><li><a target="_blank" title="" href=""></a></li></strong>-->
               </ul>
   </div>
 
+  <div class="two columns offset-by-one">
+              <h4>France</h4>
+              <ul>
+                  <li><a target="_blank" title="Breakinsecurity" href="http://blog.breakinsecurity.com/"><strong>Breakinsecurity</strong></a></li>
+                  <li><a target="_blank" title="Jeyg" href="http://jeyg.info/"><strong>Jeyg</strong></a></li>
+                  <li><a target="_blank" title="David Catuhe" href="http://blogs.msdn.com/b/eternalcoding/"><strong>David Catuhe</strong></a></li>
+                  <li><a target="_blank" title="Julien Dollon" href="http://julien.dollon.net/"><strong>Julien Dollon</strong></a></li>
+                  <!--<strong><li><a target="_blank" title="" href=""></a></li></strong>-->
+              </ul>
+  </div>
 
 
 </div>
