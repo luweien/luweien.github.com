@@ -5,7 +5,7 @@
         {% if page.tagline %} 
             <h4 class="subheader">{{ page.tagline }}</h4>
              <div class="date"><span>{{ page.date | date_to_long_string }}|| {{ page.category }}</span></div> 
-             
+             {{ page.category }}
         {% else if page.description %}
             <h4 class="subheader">{{ page.description }}</h4>
         {% endif %}
