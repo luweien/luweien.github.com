@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!--
-    * Author:         BeiYuu
-    -->
+	 <meta name="ujianVerification" content="82d604d514e04c4086a9fee308971f58" />
     <meta charset="utf-8" />
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
     <meta name="author" content="Bruce" />
@@ -30,16 +28,7 @@
 
     {{ content }}
 
-    <!--*********************************************************-->
-    <!--****** 宝贝儿，看见这个时候，删掉下面的统计代码哦~ ******-->
-    <!--************* 再推荐下我的第一篇博客哦~~ ****************-->
-    <!--*********************************************************-->
 
-     <!-- <div class="hide">
-        <script type="text/javascript" src="http://js.tongji.linezing.com/2727758/tongji.js"></script>
-        <noscript><a href="http://www.linezing.com"><img src="http://img.tongji.linezing.com/2727758/tongji.gif"/></a></noscript>
-    </div>
-	-->
     <script type="text/javascript">
         $(function(){
             $('.home-follow').click(function(e){
@@ -53,17 +42,5 @@
             });
         })
     </script>
-	  <!--
-	 <footer>
-          <div>
-            {% assign first_post = site.posts | last %}
-            &copy; {{ first_post.date | date: "%Y" }} ~ {{ site.time | date: "%Y" }} {{ site.author }} | powered by jekyll
-            <script type="text/javascript">
-                var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-                document.write(unescape("%3Cspan id='cnzz_stat_icon_1000265309'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s22.cnzz.com/z_stat.php%3Fid%3D1000265309%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));
-            </script>
-          </div>
-        </footer>
-		-->
 </body>
 </html>
