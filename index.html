@@ -17,6 +17,7 @@ description: Bruce
                     {{ post.date | date: "%B %e, %Y" }}
                 </strong>
                 | {{ post.category }}
+                {{ post.content  | | split:'<!--break-->' | first}}
             </p>
             {% if forloop.last %}
             {% else %}
